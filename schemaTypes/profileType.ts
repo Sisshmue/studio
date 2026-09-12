@@ -37,8 +37,24 @@ export const profileType = defineType({
     }),
     defineField({
       name: 'profileImage',
-      title: 'Profile Picture',
+      title: 'Primary Profile Picture (Warm / Orange)',
       type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        defineField({
+          name: 'alt',
+          type: 'string',
+          title: 'Alt Text',
+        }),
+      ],
+    }),
+    defineField({
+      name: 'secondaryProfileImage',
+      title: 'Secondary Profile Picture (Alternate / Flip)',
+      type: 'image',
+      description: 'Profile picture shown when the hero avatar token is flipped',
       options: {
         hotspot: true,
       },
