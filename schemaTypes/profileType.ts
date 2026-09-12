@@ -24,6 +24,18 @@ export const profileType = defineType({
       description: 'e.g., "Mobile • Web • Backend"',
     }),
     defineField({
+      name: 'location',
+      title: 'Current Location',
+      type: 'string',
+      description: 'e.g., "Bangkok, Thailand"',
+    }),
+    defineField({
+      name: 'availability',
+      title: 'Availability Status',
+      type: 'string',
+      description: 'e.g., "Open for opportunities" or "Available for hire"',
+    }),
+    defineField({
       name: 'profileImage',
       title: 'Profile Picture',
       type: 'image',
